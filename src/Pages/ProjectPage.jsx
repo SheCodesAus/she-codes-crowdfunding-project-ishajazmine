@@ -3,7 +3,7 @@ import { oneProject } from "../data";
 
 function ProjectPage() {
     return (
-        <div>
+        <>
             <h2>{oneProject.title}</h2>
             <h3>Created at: {oneProject.date_created}</h3>
             <h3>{`Status: ${oneProject.is_open}`}</h3>
@@ -17,8 +17,12 @@ function ProjectPage() {
                     );
                 })}
             </ul>
-        </div>
+        </>
     );
 }
+/* <react fragment></react> */
+// can also use <> blank - and react will know it's a react fragment
 
+// ` - back ticks inject values into strings put value inside ${}
+// eg `${value}
 export default ProjectPage;

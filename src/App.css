@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,7 +35,7 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
 
 #project-list {
   display: grid;
@@ -43,3 +43,5 @@
   column-gap: 10px;
   row-gap: 10px;
 }
+
+/* ^ AVOID USING TOO MUCH GLOBAL CSS HERE - react prefers components */
